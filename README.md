@@ -5,21 +5,21 @@ A deep learning pipeline that detects **heart murmurs** from **phonocardiogram (
 
 ##  Table of Contents
 
-- 📁 Project Structure
-- 🧠 Model Overview
-- 🔬 Dataset
-- ⚙️ Preprocessing Pipeline
-- 🚀 Training & Evaluation
-- 🧪 Inference
-- 📊 Results Summary
-- 📦 Installation
-- 📂 Requirements
-- 🤝 Contributing
-- 📄 License
+- Project Structure
+- Model Overview
+- Dataset
+- Preprocessing Pipeline
+- Training & Evaluation
+- Inference
+- Results Summary
+- Installation
+- Requirements
+- Contributing
+- License
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 
@@ -43,7 +43,7 @@ heart-murmur-classification/
 
 ---
 
-## 🧠 Model Overview
+## Model Overview
 
 | Component     | Details                          |
 |---------------|----------------------------------|
@@ -59,7 +59,7 @@ heart-murmur-classification/
 <img width="1280" height="708" alt="Image" src="https://github.com/user-attachments/assets/86a435c6-3bd1-4896-a919-fe8287156341" />
 ---
 
-## 🔬 Dataset
+## Dataset
 
 - **Source**: [Kaggle - Heart Murmur Classification](https://www.kaggle.com/code/zzettrkalpakbal/heart-murmur-classification/input)
 - **Format**: `.wav` files + metadata CSV
@@ -68,7 +68,7 @@ heart-murmur-classification/
 
 ---
 
-## ⚙️ Preprocessing Pipeline
+## Preprocessing Pipeline
 
 Each `.wav` file is converted to a 3-second **mel-spectrogram** via:
 
@@ -85,9 +85,9 @@ Each `.wav` file is converted to a 3-second **mel-spectrogram** via:
 
 ---
 
-## 🚀 Training & Evaluation
+## Training & Evaluation
 
-### 🔁 Cross-Validation Setup
+### Cross-Validation Setup
 
 | Feature            | Value       |
 |--------------------|-------------|
@@ -99,7 +99,7 @@ Each `.wav` file is converted to a 3-second **mel-spectrogram** via:
 | Metrics Averaged   | Across all folds & runs |
 | Optimizer          | Adam        |
 
-### 🏷 Metrics Used
+### Metrics Used
 
 - Accuracy
 - F1 Score
@@ -130,7 +130,7 @@ Each `.wav` file is converted to a 3-second **mel-spectrogram** via:
 <img width="1200" height="700" alt="Image" src="https://github.com/user-attachments/assets/28026d71-b7bb-4281-bb59-edc0e5f49666" />
 ---
 
-## 🧪 Inference
+## Inference
 
 Make predictions using a trained model and a PNG spectrogram.
 
@@ -155,7 +155,7 @@ Prediction: murmur (Confidence: 0.9482)
 
 ---
 
-## 📊 Results Summary
+## Results Summary
 
 | Metric      | Mean   | Std. Dev. |
 | ----------- | ------ | --------- |
@@ -172,31 +172,31 @@ Saved in:
 
 ---
 
-## 📦 Installing Requirements
+## Installing Requirements
 
 We recommend using [`uv`](https://github.com/astral-sh/uv) for reproducible and fast Python environments.
 ### Using uv:
-### 🧰 Set up environment
+### Set up environment
 
 ```bash
 uv venv
 .venv/Script/activate
 ```
 
-### 📥 Install dependencies
+### Install dependencies
 
 ```bash
 uv pip install -r requirements.txt
 ```
 ### Using pip:
-### 🧰 Set up environment
+### Set up environment
 
 ```bash
 python -m venv .venv
 .venv/Script/activate
 ```
 
-### 📥 Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -204,7 +204,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📂 Requirements
+## Requirements
 
 Minimal required packages (CUDA 12.8 compatible):
 
@@ -270,13 +270,14 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ---
 
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License**.
 
 ---
 
-## ❤️ Acknowledgements
+## Acknowledgements
 
 * Kaggle dataset by Izzet Turkalp Akbasli
 * Librosa, PyTorch, VGG16
+* noisereduce library
