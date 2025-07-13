@@ -5,17 +5,17 @@ A deep learning pipeline that detects **heart murmurs** from **phonocardiogram (
 
 ##  Table of Contents
 
-- [📁 Project Structure](#-project-structure)
-- [🧠 Model Overview](#-model-overview)
-- [🔬 Dataset](#-dataset)
-- [⚙️ Preprocessing Pipeline](#️-preprocessing-pipeline)
-- [🚀 Training & Evaluation](#-training--evaluation)
-- [🧪 Inference](#-inference)
-- [📊 Results Summary](#-results-summary)
-- [📦 Installation (uv)](#-installation-uv)
-- [📂 Requirements](#-requirements)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
+- 📁 Project Structure
+- 🧠 Model Overview
+- 🔬 Dataset
+- ⚙️ Preprocessing Pipeline
+- 🚀 Training & Evaluation
+- 🧪 Inference
+- 📊 Results Summary
+- 📦 Installation
+- 📂 Requirements
+- 🤝 Contributing
+- 📄 License
 
 ---
 
@@ -56,7 +56,7 @@ heart-murmur-classification/
 ### Model Architecture:
 - Freeze first 5 layers
 - Replace the last layer by `nn.Linear(4096, 2)`
-
+<img width="1280" height="708" alt="Image" src="https://github.com/user-attachments/assets/86a435c6-3bd1-4896-a919-fe8287156341" />
 ---
 
 ## 🔬 Dataset
@@ -108,6 +108,20 @@ Each `.wav` file is converted to a 3-second **mel-spectrogram** via:
 - Precision
 - Confusion Matrix
 
+| Run	 | F1 Score	| Accuracy	| Sensitivity | Specificity	|Precision|
+|--------|----------|-----------|-------------|-------------|--------|
+| Run 1	 | 0.8165	| 0.8096	| 0.8226	  | 0.7961	    | 0.8274 |
+| Run 2	 | 0.8291	| 0.8192	| 0.8528	  | 0.7843   	| 0.8142 |
+| Run 3	 | 0.8530	| 0.8442	| 0.8792	  | 0.8078	    | 0.8304 |
+| Run 4	 | 0.8240	| 0.8173	| 0.8415	  | 0.7922   	| 0.8111 |
+| Run 5	 | 0.8266	| 0.8212	| 0.8340	  | 0.8078   	| 0.8225 | 
+| Run 6	 | 0.8215	| 0.8154	| 0.8340	  | 0.7961   	| 0.8161 |
+| Run 7	 | 0.8348	| 0.8288	| 0.8340	  | 0.8235   	| 0.8445 |
+| Run 8	 | 0.8289	| 0.8288	| 0.8151	  | 0.8431   	| 0.8506 |
+| Run 9	 | 0.8228	| 0.8327	| 0.7660	  | 0.9020  	| 0.8969 |
+| Run 10 | 0.8221	| 0.8115	| 0.8377	  | 0.7843  	| 0.8161 |
+| Mean	 | 0.8279	| 0.8229	| 0.8317	  | 0.8137  	| 0.8330 |
+| Std	 | 0.0102	| 0.0107	| 0.0289	  | 0.0360  	| 0.0260 |
 ---
 
 ## 🧪 Inference
