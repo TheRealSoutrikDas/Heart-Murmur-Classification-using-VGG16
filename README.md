@@ -107,7 +107,7 @@ Each `.wav` file is converted to a 3-second **mel-spectrogram** via:
 - Specificity
 - Precision
 - Confusion Matrix
-
+### Output Metrics
 | Run	 | F1 Score	| Accuracy	| Sensitivity | Specificity	|Precision|
 |--------|----------|-----------|-------------|-------------|--------|
 | Run 1	 | 0.8165	| 0.8096	| 0.8226	  | 0.7961	    | 0.8274 |
@@ -122,6 +122,12 @@ Each `.wav` file is converted to a 3-second **mel-spectrogram** via:
 | Run 10 | 0.8221	| 0.8115	| 0.8377	  | 0.7843  	| 0.8161 |
 | Mean	 | 0.8279	| 0.8229	| 0.8317	  | 0.8137  	| 0.8330 |
 | Std	 | 0.0102	| 0.0107	| 0.0289	  | 0.0360  	| 0.0260 |
+### Visualization
+<img width="1200" height="600" alt="Image" src="https://github.com/user-attachments/assets/bb5857f4-3056-4637-9ed5-d6ef876a434f" />
+<img width="1200" height="600" alt="Image" src="https://github.com/user-attachments/assets/43fa5a09-16ad-43dc-bd37-cd822d07f447" />
+<img width="1200" height="600" alt="Image" src="https://github.com/user-attachments/assets/b8e49c81-3ee8-4a4a-8b64-7c68b1b4a621" />
+<img width="800" height="600" alt="Image" src="https://github.com/user-attachments/assets/e28fedee-fae4-4304-91d9-9063ef4a76f2" />
+<img width="1200" height="700" alt="Image" src="https://github.com/user-attachments/assets/28026d71-b7bb-4281-bb59-edc0e5f49666" />
 ---
 
 ## 🧪 Inference
