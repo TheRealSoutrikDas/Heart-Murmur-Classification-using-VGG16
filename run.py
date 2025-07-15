@@ -106,7 +106,7 @@ def train(training_X, training_Y, validation_X, validation_Y, fold, epochs, pati
     val_loader = DataLoader(val_dataset, batch_size=16)
 
     best_model = None
-    best_f1 = 0
+    best_val_loss = float('inf')
     trigger_times = 0
 
     for epoch in range(epochs):
